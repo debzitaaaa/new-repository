@@ -1,0 +1,19 @@
+package gg.jte.generated.ondemand;
+@SuppressWarnings("unchecked")
+@javax.annotation.processing.Generated("gg.jte.TemplateEngine")
+public final class JteformularioGenerated {
+	public static final String JTE_NAME = "formulario.jte";
+	public static final int[] JTE_LINE_INFO = {1,0,0,0,0,0,0,1,5,5,96,96,96,97,0,0,0,0,0};
+	public static void render(gg.jte.html.HtmlTemplateOutput jteOutput, gg.jte.html.HtmlInterceptor jteHtmlInterceptor) {
+		jteOutput.writeContent("\r\n");
+		gg.jte.generated.ondemand.JtelayoutGenerated.render(jteOutput, jteHtmlInterceptor, "Novo prato", "novo", new gg.jte.html.HtmlContent() {
+			public void writeTo(gg.jte.html.HtmlTemplateOutput jteOutput) {
+				jteOutput.writeContent("\r\n\r\n    <header class=\"topbar\">\r\n        <span>Meu Cardápio / Novo prato</span>\r\n    </header>\r\n\r\n    <section class=\"page-heading\">\r\n        <h1>Novo prato</h1>\r\n        <p>Preencha as informações para planejar sua refeição.</p>\r\n    </section>\r\n\r\n    <div class=\"form-layout\">\r\n\r\n        <form method=\"post\" action=\"/pratos\" class=\"form-card\">\r\n\r\n            <label>Nome do prato *</label>\r\n            <input\r\n                    type=\"text\"\r\n                    name=\"nome\"\r\n                    placeholder=\"Ex: Lasanha à Bolonhesa\"\r\n                    required>\r\n\r\n            <div class=\"form-row\">\r\n\r\n                <div>\r\n                    <label>Tipo *</label>\r\n\r\n                    <select name=\"tipo\" required>\r\n                        <option value=\"Almoço\">Almoço</option>\r\n                        <option value=\"Jantar\">Jantar</option>\r\n                    </select>\r\n                </div>\r\n\r\n                <div>\r\n                    <label>Porções *</label>\r\n\r\n                    <input\r\n                            type=\"number\"\r\n                            name=\"porcoes\"\r\n                            min=\"1\"\r\n                            value=\"4\"\r\n                            required>\r\n                </div>\r\n\r\n            </div>\r\n\r\n            <label>Categoria *</label>\r\n\r\n            <select name=\"categoria\" required>\r\n                <option value=\"Massa\">Massa</option>\r\n                <option value=\"Salada\">Salada</option>\r\n                <option value=\"Carne\">Carne</option>\r\n                <option value=\"Vegano\">Vegano</option>\r\n                <option value=\"Sobremesa\">Sobremesa</option>\r\n            </select>\r\n\r\n            <label>Data planejada *</label>\r\n\r\n            <input\r\n                    type=\"date\"\r\n                    name=\"dataPlanejada\"\r\n                    required>\r\n\r\n            <label>Observação (opcional)</label>\r\n\r\n            <textarea\r\n                    name=\"observacao\"\r\n                    placeholder=\"Ex: levar a sobremesa na festa de sábado\">\r\n            </textarea>\r\n\r\n            <div class=\"actions\">\r\n                <button type=\"submit\" class=\"btn btn-primary\">\r\n                    Salvar prato\r\n                </button>\r\n\r\n                <a href=\"/pratos\" class=\"btn btn-light\">\r\n                    Cancelar\r\n                </a>\r\n            </div>\r\n\r\n        </form>\r\n\r\n        <aside class=\"summary-card\">\r\n            <span>👀</span>\r\n            <h2>Resumo do prato</h2>\r\n            <p>Preencha os campos para cadastrar seu prato.</p>\r\n            <div class=\"summary-decoration\">🍽️</div>\r\n        </aside>\r\n\r\n    </div>\r\n\r\n");
+			}
+		});
+		jteOutput.writeContent("\r\n");
+	}
+	public static void renderMap(gg.jte.html.HtmlTemplateOutput jteOutput, gg.jte.html.HtmlInterceptor jteHtmlInterceptor, java.util.Map<String, Object> params) {
+		render(jteOutput, jteHtmlInterceptor);
+	}
+}
